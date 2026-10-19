@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "framework": null,
+  "regions": [
+    "sin1"
+  ],
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.6.2"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/send-reminders?type=daily",
+      "schedule": "0 0 * * *"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/build/(.*)",
+      "dest": "/public/build/$1"
+    },
+    {
+      "src": "/img/(.*)",
+      "dest": "/public/img/$1"
+    },
+    {
+      "src": "/(.*)\\.(ico|png|jpg|jpeg|svg|css|js|txt|webmanifest)$",
+      "dest": "/public/$1.$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ]
+}

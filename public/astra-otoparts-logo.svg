@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" fill="none">
+  <!-- Globe with grid lines -->
+  <g id="globe">
+    <!-- Globe outer circle blue gradient fill -->
+    <defs>
+      <linearGradient id="globeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2541B2" />
+        <stop offset="100%" stop-color="#0B1B4F" />
+      </linearGradient>
+      <linearGradient id="swooshGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ED1C24" />
+        <stop offset="100%" stop-color="#A60F14" />
+      </linearGradient>
+    </defs>
+
+    <circle cx="75" cy="55" r="42" fill="url(#globeGrad)" />
+    <!-- Grid longitude/latitude curves -->
+    <ellipse cx="75" cy="55" rx="22" ry="42" stroke="#A6C5F7" stroke-width="2" fill="none" opacity="0.8" />
+    <ellipse cx="75" cy="55" rx="42" ry="20" stroke="#A6C5F7" stroke-width="2" fill="none" opacity="0.8" />
+    <line x1="75" y1="13" x2="75" y2="97" stroke="#A6C5F7" stroke-width="2" opacity="0.8" />
+    <line x1="33" y1="55" x2="117" y2="55" stroke="#A6C5F7" stroke-width="2" opacity="0.8" />
+    
+    <!-- Red Orbit Ring Swoosh -->
+    <path d="M 12,82 C 10,84 35,32 148,22 C 78,35 25,65 12,82 Z" fill="url(#swooshGrad)" />
+  </g>
+
+  <!-- Brand Typography -->
+  <!-- ASTRA (Red Bold Italic) -->
+  <text x="135" y="65" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-style="oblique" font-size="46" fill="#ED1C24" letter-spacing="1">ASTRA</text>
+
+  <!-- Otoparts (Black Bold) -->
+  <text x="295" y="65" font-family="'Arial', 'Helvetica', sans-serif" font-weight="900" font-size="46" fill="#1C1C1C" letter-spacing="-1">Otoparts</text>
+
+  <!-- NUSAMETAL Division (Subtext Italic) -->
+  <text x="140" y="104" font-family="'Arial', 'Helvetica', sans-serif" font-weight="700" font-style="italic" font-size="22" fill="#222222" letter-spacing="1.5">NUSAMETAL Division</text>
+</svg>
